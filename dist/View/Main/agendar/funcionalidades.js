@@ -1,5 +1,5 @@
-import {agendamento} from "../../Controller/agendamento.js";
-import { horariosIndisponiveis } from "../../Model/Main/horariosIndisponiveis.js";
+import {agendamento} from "../../../Controller/agendamento.js";
+import { horariosIndisponiveis } from "../../../Model/Main/horariosIndisponiveis.js";
 
 const toggleButton = document.getElementById("diaEscolhido");
 const container = document.getElementById("espaçoContainer");

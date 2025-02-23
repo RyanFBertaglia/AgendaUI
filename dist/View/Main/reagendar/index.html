@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./paginaReagendamento.css">
+  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="efeitos.css">
+  <link rel="stylesheet" href="../style/tipografia.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Agendamento</title>
+</head>
+<body>
+<div id="elementoConfirmação">
+</div>
+<div id="elementoBlur">
+  <header>
+    <nav>
+      <a class="links border-underline" href="https://github.com/RyanFBertaglia">GitHub</a>
+      <a class="links border-underline" id="enviarEmail" href="mailto:ryanfernandesbertaglia@gmail.com?&body=Corpo do email">Enviar Email</a>
+      <a class="links border-underline" href="#conteudoFooterGrid">Contato</a>
+      <div id="botaoNavegação">
+        <button id="botaoDeCima">Acompanhar Horários</button>
+        <button id="botaoDeBaixo">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="titulo">
+    <hr>
+    <h1>Encontre o dia certo para você</h1>
+    <h3>Escolha o dia e consulte os horários disponiveis</h3>
+  </div>
+
+  <main>
+
+    <div class="cabeçalho">
+      <h2>Horários Marcados</h2>
+    </div>
+    <div id="container">
+      <hr>
+        <div class="celula">
+            <h5>Dia: 10/21/2121</h5>
+            <h5>Hora: 12:00</h5>
+            <button class="modificar" name="Desmarcar">Desmarcar</button>
+            <button class="modificar" name="Remarcar">Remarcar</button>
+        </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <hr>
+    <br>
+    <div class="cabeçalho" name="tituloFooter">
+      <h2>Contato</h2>
+    </div>
+    <div id="conteudoFooterGrid">
+      <div id="Textos">
+        <h4>Email</h4>
+        <p>ryanfernandesbertaglia@gmail.com</p>
+        <h4>GitHub</h4>
+        <p>https://github.com/RyanFBertaglia</p>
+        <h4>Telefone</h4>
+        <p>19982338496</p>
+      </div>
+      <div id="icones">
+        <img src="../icons/email.svg" alt="Icone Email">
+        <img src="../icons/github.svg" alt="Icone GitHub">
+        <img src="../icons/telefone.svg" alt="Icone Telefone">
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="funcionalidades.js"></script>
+</body>
+</html>

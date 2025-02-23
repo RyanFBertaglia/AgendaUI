@@ -1,0 +1,148 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+main{
+    min-height: 657px;
+}
+
+header{
+    height: 164px;
+    width: 100%;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+a{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 209, 109);
+    font-size: medium;
+    height: 46px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.links.border-underline {
+    position: relative;
+    text-decoration: none;
+}
+
+.border-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    height: 1px;
+    background-color: rgb(255, 209, 109);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+
+.border-underline:hover::before, .border-underline:focus::before {
+    transform: scaleX(1);
+}
+
+nav #botaoNavegação{
+    width: 10%;
+    height: 50%;
+}
+
+#botaoDeCima{
+    padding: 3px 18px;
+    width: 100%;
+    border: 1px solid #545672;
+}
+#botaoDeBaixo{
+    padding: 3px 18px;
+    width: 100%;
+    border: 1px solid #545672;
+}
+
+footer{
+    background-color: rgba(255, 202, 109, 0.25);
+    height: 454px;
+}
+
+#conteudoFooterGrid{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#icones{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.titulo{
+    background-color: rgba(146, 152, 227, 0.15);
+    height: 445px;
+    align-items: center;
+    justify-items: center;
+    font-size: 200%;
+}
+
+@media (max-width: 600px) {
+    #botaoDeCima{
+        height: auto;
+        width: 80px;
+        font-size: 80%;
+    }
+    #botaoDeBaixo{
+        height: 80;
+        width: 80px;
+        font-size: 80%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 911px){
+    #botaoDeCima{
+        height: 48px;
+    }
+    #botaoDeBaixo{
+        height: 48px;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 2225px){
+    #botaoDeCima{
+        width: 160%;
+    }
+    #botaoDeBaixo{
+        width: 160%;
+    }
+  }
+  @media (max-width: 400px){
+    .titulo{
+        height: 540px;
+    }
+    #botaoDeCima{
+        width: 140%;
+        font-size: smaller;
+    }
+    #botaoDeBaixo{
+        width: 140%;
+        font-size: smaller;
+    }
+    a{
+        font-size: smaller;
+    }
+  }
