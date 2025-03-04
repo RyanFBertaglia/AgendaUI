@@ -1,4 +1,12 @@
+import {ControleAgendados} from "../../../Controller/ControleAgendados";
+
 document.addEventListener("DOMContentLoaded", adicionarElementos(6));
+
+const controleAgendados = new ControleAgendados;
+
+
+
+
 function adicionarElementos(qtd) {
     const container = document.getElementById("container");
     container.innerHTML = ""; 

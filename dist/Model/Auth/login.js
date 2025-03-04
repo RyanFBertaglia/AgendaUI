@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('Sucesso:', result);
                     alert('Login efetuado com sucesso!');
                     setTimeout(() => {
-                        window.location.href = "../dist/View/Main/agendar/index.html";
+                        window.location.href = "/dist/View/Main/index.html";
                     }, 2000);
                 }
                 else {

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const result = await response.json();
                     console.log('Sucesso:', result);
                     alert('Cadastro efetuado com sucesso!');
-                    window.location.href = '../View/Main/agendar/index.html';
+                    window.location.href = '../Main/index.html';
                 }
                 else {
                     console.error('Erro:', response.statusText);
