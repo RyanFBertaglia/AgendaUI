@@ -7,8 +7,15 @@ export class ControleAgendados {
     alterarHorario(antigo, novo) {
         return this.alteraHorario.alterarHorario(antigo, novo);
     }
-    cancelarHorario(diaCancelado) {
-        return this.cancelaHorario.cancelarHorario(diaCancelado);
+    async cancelarHorario(diaCancelado) {
+        const result = await this.cancelaHorario.cancelarHorario(diaCancelado);
+        if (result) {
+            alert("Horário Removido");
+            window.location.reload();
+        }
+        else {
+            alert("Tente novamente mais tarde");
+        }
     }
     buscarRealizados() {
         return this.buscaRealizados.buscarRealizados();

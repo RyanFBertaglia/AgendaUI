@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css>
-  <link rel="stylesheet" href="../style/salvar.css">
   <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="../style/salvar.css">
   <link rel="stylesheet" href="../style/tipografia.css">
+  <link rel="stylesheet" href="./remarcar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -22,29 +23,26 @@
       <a class="links border-underline" href="https://github.com/RyanFBertaglia">GitHub</a>
       <a class="links border-underline" id="enviarEmail" href="mailto:ryanfernandesbertaglia@gmail.com?&body=Corpo do email">Enviar Email</a>
       <a class="links border-underline" href="#conteudoFooterGrid">Contato</a>
-      <div id="botaoNavegação">
-        <button id="botaoDeCima">Horas Marcadas</button>
-        <button id="botaoDeBaixo">Login</button>
-      </div>
     </nav>
   </header>
 
   <div class="titulo">
     <hr>
-    <h1>Encontre o dia certo para você</h1>
+    <h1>Remarque seu dia</h1>
     <h3>Escolha o dia e consulte os horários disponiveis</h3>
   </div>
 
   <main>
 
     <div class="cabeçalho">
-      <h2>Calendário</h2>
-    </div>
+      <h2>Calendário Reagendamento</h2>
+    </div> 
     <div id="espaçoContainer">
       <div id="espaçoCalendario">
         <div id="DD"></div>
         <div id="botao">
           <button id="diaEscolhido" class="trocaCor" type="submit">Buscar</button>
+          <button class="trocaCor" id="cancelar" >Cancelar</button>
         </div>
       </div>
 
@@ -113,6 +111,6 @@
 
 <script src=https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js></script>
 <script src="../style/calendario.js"></script>
-<script type="module" src="funcionalidades.js"></script>
+<script type="module" src="remarcar.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-export class CancelarHorario {
+export class CancelaHorario {
     async cancelarHorario(dados) {
         try {
             const response = await fetch("http://localhost:8080/cancelar", {

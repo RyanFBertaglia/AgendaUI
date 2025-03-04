@@ -64,12 +64,14 @@ nav #botaoNavegação{
 
 #botaoDeCima{
     padding: 3px 18px;
-    width: 100%;
+    width: 160%;
+    height: 50px;
     border: 1px solid #545672;
 }
 #botaoDeBaixo{
     padding: 3px 18px;
-    width: 100%;
+    width: 160%;
+    height: 50px;
     border: 1px solid #545672;
 }
 
@@ -102,45 +104,42 @@ footer{
 }
 
 @media (max-width: 600px) {
-    #botaoDeCima{
-        height: auto;
-        width: 80px;
-        font-size: 80%;
-    }
-    #botaoDeBaixo{
-        height: 80;
-        width: 80px;
-        font-size: 80%;
+    #botaoDeCima, #botaoDeBaixo{
+        font-size: small;
     }
   }
 
   @media (min-width: 900px) and (max-width: 911px){
-    #botaoDeCima{
-        height: 48px;
-    }
-    #botaoDeBaixo{
+    #botaoDeCima, #botaoDeBaixo{
         height: 48px;
     }
   }
-  @media (min-width: 600px) and (max-width: 2225px){
-    #botaoDeCima{
-        width: 160%;
+  @media (max-width: 500px){
+    #botaoNavegacao{
+        width: 150%;
+        padding: 100%;
+        padding-right: 150%;
     }
-    #botaoDeBaixo{
-        width: 160%;
+    #botaoDeCima, #botaoDeBaixo{
+        font-size: x-small;
+        width: 163%;
+        justify-content: left;
+        text-justify: distribute-all-lines;
+        padding-left: 18px;
     }
+    #a{
+        font-size: small;
+    }
+    #icones{
+        gap: 0px;
+    }
+    #conteudoFooterGrid{
+        padding-left: 0%;
   }
+}
   @media (max-width: 400px){
     .titulo{
         height: 540px;
-    }
-    #botaoDeCima{
-        width: 140%;
-        font-size: smaller;
-    }
-    #botaoDeBaixo{
-        width: 140%;
-        font-size: smaller;
     }
     a{
         font-size: smaller;

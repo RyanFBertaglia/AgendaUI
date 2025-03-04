@@ -1,0 +1,16 @@
+#cancelar {
+    background: transparent;
+    font-size: medium;
+    width: 100%;
+    height: 28px;
+    color: rgba(146, 152, 227, 1);
+    border: 2px solid black;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+#cancelar:hover{
+    color: #042460;
+    box-shadow: inset 0 0 0 2em #ffcf72;
+}

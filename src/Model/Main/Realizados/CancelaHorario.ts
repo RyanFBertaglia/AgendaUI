@@ -1,6 +1,6 @@
 import { Dados } from "../Dados";
 
-export class CancelarHorario{
+export class CancelaHorario{
     async cancelarHorario(dados: Dados): Promise<boolean>{
             try {
                 const response = await fetch("http://localhost:8080/cancelar", {

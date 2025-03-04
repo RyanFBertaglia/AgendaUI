@@ -1,0 +1,91 @@
+:root {
+    --hover: rgba(146, 152, 227, 1);
+    --text-color: rgb(42, 51, 162);
+    --border-color: #545672;
+    --color-hover: #ffe9c3;
+}
+
+
+.loader {
+    width: 120px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
+
+.container{
+    display: grid;
+    align-items: center;
+}
+
+
+  #botaoDeCima, #botaoDeBaixo{
+    border-radius: 8px;
+    display: inline-block;
+    padding: 3px 16px;
+    font-size: medium;
+    color: var(--text-color);
+    background-color: rgba(255, 224, 170, 0.5);
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+  }
+  #botaoDeCima, #botaoDeBaixo{
+    width: 160%;
+    height: 50px;
+    border: 1px solid var(--border-color)
+}
+
+#item{
+    justify-content: space-around;
+    display: grid;
+}
+
+#container{
+    display: grid;
+    place-items: center;
+    width: 80%;
+    border-radius: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.celula{
+    border-radius: 3%;
+    margin-bottom: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#botaoDeCima, #botaoDeBaixo, .modificar{
+    border-radius: 8px;
+    display: inline-block;
+    padding: 3px 16px;
+    font-size: medium;
+    color: var(--text-color);
+    background-color: rgba(255, 224, 170, 0.5);
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+  }
+
+#botaoDeCima:hover, #botaoDeBaixo:hover,
+#botaoDeCima:focus, #botaoDeBaixo:focus,
+.modificar:hover, .modificar:focus{
+    color: var(--color-hover);
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+

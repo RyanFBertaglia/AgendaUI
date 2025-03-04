@@ -1,0 +1,159 @@
+
+:root {
+    --hover: rgba(146, 152, 227, 1);
+    --text-color: rgb(42, 51, 162);
+    --border-color: #3498db;
+    --color-hover: #ffe9c3;
+}
+
+  #botaoDeCima, #botaoDeBaixo{
+    border-radius: 8px;
+    display: inline-block;
+    padding: 3px 16px;
+    font-size: medium;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    background-color: rgba(255, 224, 170, 0.5);
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+  }
+  .trocaCor{
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    background-color: rgba(255, 224, 170, 0.5);
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+  }
+  
+
+.botaozinho{
+    display: inline-block;
+    padding: 3px 16px;
+    font-size: medium;
+    color: var(--hover);
+    border: 2px solid #545672;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+  #botaoDeCima:hover, #botaoDeBaixo:hover,
+  #botaoDeCima:focus, #botaoDeBaixo:focus,
+  #diaEscolhido:hover, #diaEscolhido:focus,
+  #envia:hover, #envia:focus,
+    .botaozinho:hover, .botaozinho:focus {
+    color: var(--color-hover);
+    box-shadow: inset 0 0 0 2em var(--hover);
+  }
+
+#diaEscolhido, #envia{
+    background: transparent;
+    font-size: medium;
+    color: var(--hover);
+    border: 2px solid black;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+#diaEscolhido{
+    margin-top: 6px;
+    padding: 3px 18px;
+}
+
+#envia{
+    width: 100%;
+    height: 38px;
+}
+
+.flatpickr-calendar.animate.inline {
+    font-size: x-large;
+    height: 300px;
+}
+
+
+#espaçoHorarios{
+  display: none;
+  justify-content: space-between;
+  place-items: center;
+}
+
+#conjuntoTableEBotao{
+  width: 80%;
+  justify-content: space-around;
+}
+
+#espaçoContainer{
+    display: grid;
+    place-items: center;
+}
+
+#espaçoContainer.show-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+td:hover{
+    background-color: darkgray;
+}
+
+.selecionado {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+#diaEscolhido{
+    width: 100%;
+    height: 32px;
+}
+
+.naoPode{
+   text-decoration: line-through;;
+}
+
+#elementoConfirmação{
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 400px;
+    padding: 20px;
+    height: 200px;
+    backdrop-filter: blur(200px);
+    background-color: #ffcf72;
+    z-index: 4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+  #espaçoContainer.show-grid{
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  #espaçoHorarios{
+    width: 100%;
+  }
+  @media (min-width: 600px) and (max-width: 2225px){
+    #espaçoContainer.show-grid{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+      }
+  }
+  

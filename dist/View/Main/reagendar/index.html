@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./paginaReagendamento.css">
   <link rel="stylesheet" href="../style/base.css">
-  <link rel="stylesheet" href="efeitos.css">
+  <link rel="stylesheet" href="reagendar.css">
   <link rel="stylesheet" href="../style/tipografia.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <a class="links border-underline" id="enviarEmail" href="mailto:ryanfernandesbertaglia@gmail.com?&body=Corpo do email">Enviar Email</a>
       <a class="links border-underline" href="#conteudoFooterGrid">Contato</a>
       <div id="botaoNavegação">
-        <button id="botaoDeCima">Acompanhar Horários</button>
+        <button id="botaoDeCima">Página Principal</button>
         <button id="botaoDeBaixo">Login</button>
       </div>
     </nav>
@@ -40,13 +40,9 @@
       <h2>Horários Marcados</h2>
     </div>
     <div id="container">
-      <hr>
-        <div class="celula">
-            <h5>Dia: 10/21/2121</h5>
-            <h5>Hora: 12:00</h5>
-            <button class="modificar" name="Desmarcar">Desmarcar</button>
-            <button class="modificar" name="Remarcar">Remarcar</button>
-        </div>
+      <div id="item">
+        <div class="loader"></div>
+      </div>
     </div>
 
   </main>
